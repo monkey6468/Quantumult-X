@@ -1,5 +1,5 @@
 /*********************
-微博超话题签到js脚本
+微博超话题签到js脚本 fetch 方式
 
 注：id 和 cookie 是必要参数
 eg：
@@ -47,7 +47,7 @@ function request(url, data, method = "get") {
 
   return fetch(url, {
     method,
-    // body: JSON.stringify(data),
+    body: JSON.stringify(data),
     headers: {
       ua: "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.114 Safari/537.36",
       cookie:
@@ -64,8 +64,7 @@ function checkin() {
     {
       api: "http://i.huati.weibo.com/aj/super/checkin",
       id: "10080867e346d6acb71c0a12d1e33b4692abed",
-    },
-    "get"
+    }
   ).then((res) => {
     console.log(res);
 
