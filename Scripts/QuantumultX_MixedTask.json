@@ -1,0 +1,29 @@
+{
+    "description": "https://github.com/1019459067/Quantumult-X",
+    "name": "薅就行!!!",
+    "task": [
+        {
+            "config": "5 0 * * * https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/bilibili.js, tag=Bilibili签到, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/bilibili.png"
+        },
+        {
+            "config": "10 0 * * * https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/iQIYI.js tag=爱奇艺, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/iqiyi.png"
+        },
+        {
+            "config": "5 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/smzdm/smzdm.js, tag=什么值得买, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/smzdm.png"
+        },
+        {
+            "config": "10 0 * * * https://raw.githubusercontent.com/chavyleung/scripts/master/mgtv/mgtv.js, tag=芒果TV, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/mgtv.png"
+        },
+        {
+            "config": "35 */30 5-23/2 * * * https://raw.githubusercontent.com/Sunert/Script/master/Task/Youth_Read.js, tag=中青看点阅读, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/youth.png",
+            "addons":"https://raw.githubusercontent.com/zeal4rea/QuantumultXConfs/main/task/YouthRead_Rewrite.txt, tag=中青看点阅读"
+        },
+        {
+            "config": "0 7 * * * https://raw.githubusercontent.com/Sunert/Script/master/Task/youth_gain.js, tag=中青看点看看赚&浏览赚, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/youth.png",
+            "addons":"https://raw.githubusercontent.com/zeal4rea/QuantumultXConfs/main/task/YouthGain_Rewrite.txt, tag=中青看点看看赚&浏览赚"
+        },
+        {
+            "config": "*/14 5-23 * * * https://raw.githubusercontent.com/Sunert/Script/master/Task/youth.js, enabled=true, tag=中青看点极速版, img-url=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/icon/color/youth.png"
+        },
+    ]
+}
