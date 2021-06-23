@@ -20,3 +20,5 @@ sever.listen(8080, (err) => {
     if (err) throw err;
     console.log("sever running at port 8080");
 });
+
+// test: http://localhost:8080/Quantumult-X/Scripts/hello?name=javascript&keyword=A
