@@ -10,7 +10,7 @@
 [rewrite_local]
 
 ^https?:\/\/api\.tipsoon\.com\/api\/v1\/top\/ad url reject-img
-^https?:\/\/api\.tipsoon\.com\/api\/v1\/user\/info url script-response-body https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/vip/jianxun.js
+^https?:\/\/api\.tipsoon\.com url script-response-body https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/vip/jianxun.js
 
 [mitm] 
 
