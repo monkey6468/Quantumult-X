@@ -11,7 +11,6 @@
 
 ^https:\/\/open3\.vistastory\.com\/v3\/api\/notice\/need_read_notice_number? url reject
 ^https:\/\/open3\.vistastory\.com\/v3\/api\/index\/loading_ad2? url reject
-
 ^http[s]?:\/\/open3\.vistastory\.com url script-response-body https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/vip/Visa.js
 
 [mitm] 
