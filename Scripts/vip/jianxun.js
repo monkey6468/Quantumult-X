@@ -18,11 +18,11 @@ hostname = api.tipsoon.com
 
 *******************************/
 
+/******************************
 var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
-
-/**js 中 indexof() 只能处理字符串类型，如果没有检索到目标字符串，则返回 -1*/
+ 
 if (url.indexOf('/info') != -1) {
     obj.data.is_vip = true;
     obj.data.vip_expire_time = "2058-03-12 09:54:28";
@@ -30,3 +30,24 @@ if (url.indexOf('/info') != -1) {
     body = JSON.stringify(obj);
 }
 $done({body});
+*******************************/
+
+
+var url = $request.url;
+if (url.indexOf('/info') != -1) {
+    replace_func('is_vip":false@expire_time":"\\d{4}',
+                 'is_vip":true@expire_time":"2058-03-12 09:54:28')
+}
+
+function replace_func() {
+    var body = $response.body;
+    if (arguments[0].includes("@")) {
+        var n = arguments[0].split("@"), r = arguments[1].split("@");
+        for (i = 0; i < n.length; i++)
+            var l = new RegExp(n[i], "g"), body = body.replace(l, r[i])
+    } else {
+        l = new RegExp(arguments[0], "g");
+        body = body.replace(l, arguments[1])
+    }
+    $done(body)
+}
