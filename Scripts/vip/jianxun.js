@@ -18,7 +18,6 @@ hostname = api.tipsoon.com
 
 *******************************/
 
-/******************************
 var body = $response.body;
 var url = $request.url;
 var obj = JSON.parse(body);
@@ -30,9 +29,8 @@ if (url.indexOf('/info') != -1) {
     body = JSON.stringify(obj);
 }
 $done({body});
-*******************************/
 
-
+/******************************
 var url = $request.url;
 if (url.indexOf('/info') != -1) {
     replace_func('is_vip":false@expire_time":"\\d{4}',
@@ -51,3 +49,4 @@ function replace_func() {
     }
     $done(body)
 }
+*******************************/
