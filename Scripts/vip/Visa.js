@@ -43,7 +43,7 @@ if (url.indexOf('/get_vip_info_and_recommend_mags') != -1) {
     obj.isVip = 1;
     obj.expireVip = 0;
     obj.isUpgradeVip = 1;
-    obj.subscriptionVip.endTime = 2783131310000;
+    obj.subscriptionVip.endTime = 2310616009000;
     obj.subscriptionVip.isActive = 1;
 
     body = JSON.stringify(obj);
