@@ -27,6 +27,7 @@ var obj = JSON.parse(body);
 /**js 中 indexof() 只能处理字符串类型，如果没有检索到目标字符串，则返回 -1*/
 if (url.indexOf('/get_home_center') != -1) {
     obj.subscriptionVip.endTime = 2783131310000;
+    obj.subscriptionVip.isActive = 1;
     obj.isVip = 1;
 
     body = JSON.stringify(obj);
