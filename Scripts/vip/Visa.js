@@ -66,4 +66,11 @@ if (url.indexOf('/last_mag_2') != -1) {
 
     body = JSON.stringify(obj);
 }
+
+if (url.indexOf('/all_mag_page_3') != -1) {
+    obj.magList.isBuyMag = 1;
+    obj.magList.isFree = 1;
+
+    body = JSON.stringify(obj);
+}
 $done({body});
