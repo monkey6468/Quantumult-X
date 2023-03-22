@@ -1,5 +1,3 @@
-
-
 /******************************
 脚本功能：Visa看天下+解锁VIP
 软件版本：3.3.3
@@ -26,7 +24,7 @@ var obj = JSON.parse(body);
 
 /**js 中 indexof() 只能处理字符串类型，如果没有检索到目标字符串，则返回 -1*/
 if (url.indexOf('/get_home_center') != -1) {
-    obj.subscriptionVip.endTime = 0;
+    obj.subscriptionVip.endTime = 2783117288000;
     obj.subscriptionVip.isActive = 1;
     obj.isVip = 1;
 
@@ -43,7 +41,7 @@ if (url.indexOf('/get_vip_info_and_recommend_mags') != -1) {
     obj.isVip = 1;
     obj.expireVip = 0;
     obj.isUpgradeVip = 1;
-    obj.subscriptionVip.endTime = 0;
+    obj.subscriptionVip.endTime = 2783117288000;
     obj.subscriptionVip.isActive = 1;
 
     body = JSON.stringify(obj);
@@ -63,6 +61,15 @@ if (url.indexOf('/last_mag_2') != -1) {
     obj.mag.isFree = 1;
     obj.teji.isfree = 1;
     obj.teji.isBuyMag = 1;
+
+    body = JSON.stringify(obj);
+}
+
+if (url.indexOf('/all_mag_page_3') != -1) {
+    for (var i = 0; i < obj.magList.length; i++) {
+        obj.magList[i].isBuyMag = 1;
+        obj.magList[i].isFree = 1;
+    }
 
     body = JSON.stringify(obj);
 }
