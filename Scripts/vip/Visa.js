@@ -68,8 +68,10 @@ if (url.indexOf('/last_mag_2') != -1) {
 }
 
 if (url.indexOf('/all_mag_page_3') != -1) {
-    obj.magList.isBuyMag = 1;
-    obj.magList.isFree = 1;
+    for (int i = 0; i < obj.magList.length; i++) {
+        obj.magList[i].isBuyMag = 1;
+        obj.magList[i].isFree = 1;
+    }
 
     body = JSON.stringify(obj);
 }
