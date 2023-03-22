@@ -24,7 +24,7 @@ var obj = JSON.parse(body);
  
 if (url.indexOf('/info') != -1) {
     obj.data.is_vip = true;
-    obj.data.vip_expire_time = "2058-03-12 09:54:28";
+    obj.data.vip_expire_time = "2058-03-12 08:08:08";
 
     body = JSON.stringify(obj);
 }
