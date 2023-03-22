@@ -57,4 +57,13 @@ if (url.indexOf('/mag_column_detail') != -1) {
 
     body = JSON.stringify(obj);
 }
+
+if (url.indexOf('/last_mag_2') != -1) {
+    obj.mag.isBuyMag = 1;
+    obj.mag.isFree = 1;
+    obj.teji.isfree = 1;
+    obj.teji.isBuyMag = 1;
+
+    body = JSON.stringify(obj);
+}
 $done({body});
