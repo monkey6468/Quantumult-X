@@ -34,7 +34,7 @@ $done({body});
 var url = $request.url;
 if (url.indexOf('/info') != -1) {
     replace_func('is_vip":false@expire_time":"\\d{4}',
-                 'is_vip":true@expire_time":"2058-03-12 09:54:28')
+                 'is_vip":true@expire_time":"2058-03-12 08:08:08')
 }
 
 function replace_func() {
