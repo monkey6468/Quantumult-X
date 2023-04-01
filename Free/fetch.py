@@ -73,8 +73,8 @@ txt = ''
 for url in set(merge):
     txt = txt + url + '\n'
 
-with open("list_raw.txt",'w') as f:
+with open("Free/list_raw.txt",'w') as f:
     f.write(txt)
-with open("list.txt",'w') as f:
+with open("Free/list.txt",'w') as f:
     b64txt = base64.b64encode(txt.encode())
     f.write(str(b64txt,'utf-8'))
