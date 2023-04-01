@@ -12,10 +12,10 @@
 ## 主要食用的地址
 ### 已经完成✅
 - [快嘴科技](https://kkzui.com/jd?orderby=modified)
+- [小汐搬运](https://banyunxiaoxi.icu/)
 
 ### 待开发❎
-banyunxiaoxi
-- [小汐搬运](https://banyunxiaoxi.icu/)
+- [Lncn.org](https://lncn.org/)
 - [v2cross](https://v2cross.com/archives/1884)
 - [不良林直播](https://www.youtube.com/watch?v=RCp9hnp7r6Q)
 
