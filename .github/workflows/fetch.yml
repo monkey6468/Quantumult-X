@@ -9,6 +9,7 @@ on:
 jobs:
   fetch:
     runs-on: ubuntu-latest
+
     steps:
     - name: 迁出代码
       uses: actions/checkout@v2
@@ -18,6 +19,7 @@ jobs:
         python-version: '3.x'
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
+
     - name: 安装依赖
       run: |
         pip install requests
@@ -28,13 +30,12 @@ jobs:
         python ./Free/freenode.py
       
     - name: 提交更改
-      run: |                 
-        git config --local user.email "actions@github.com"
-        git config --local user.name "GitHub Actions"
-        git pull origin master
-        git add -A
-        git commit -m "$(date '+%Y-%m-%d %H:%M:%S')抓取节点"
-    - name: 推送更改
-      uses: ad-m/github-push-action@master
-      with:
-        branch: master
+      run: |
+        git config --local user.name "actions@github.com"
+        git config --local user.email "GitHub Actions"
+        git add .
+        git commit --allow-empty -m "$(date '+%Y-%m-%d %H:%M:%S')抓取节点"
+
+    - name: 推送远程
+      run:     
+        git push
