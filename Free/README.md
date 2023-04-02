@@ -2,18 +2,16 @@
 
 自动抓取部分不提供订阅的公开节点。
 
-## 使用方法
+## 食用方法
+- [freenode](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/List/freenode.txt)
+- [小汐搬运](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/List/xxby.txt)
+- [快嘴科技](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/List/kjkj.txt)
 
-添加Base64订阅：
-
-- [原始链接](https://raw.githubusercontent.com/1019459067/NoMoreWalls/master/list.txt)
-- [加速链接](https://raw.githubusercontent.com/1019459067/NoMoreWalls/master/list_raw.txt)
-
-## 主要食用的地址
+## 主要参考的地址
 ### 已经完成✅
 - [freenode](https://freenode.me/)
-- [快嘴科技](https://kkzui.com/jd?orderby=modified)
 - [小汐搬运](https://banyunxiaoxi.icu/)
+- [快嘴科技](https://kkzui.com/jd?orderby=modified)
 
 ### 待开发❎
 - [Lncn.org](https://lncn.org/)

@@ -3,7 +3,7 @@ import requests
 import re
 import base64
 import traceback
-
+import os
 
 headers = {"User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/105.0.0.0 Safari/537.36 Edg/105.0.1343.53"}
 merge = []
@@ -29,5 +29,8 @@ except:
 txt = ''
 for url in set(merge):
     txt = txt + url + '\n'
-with open("Free/freenode_row.txt",'w') as f:
+
+if not os.path.exists("Free/List"):
+    os.makedirs("Free/List")
+with open("Free/List/freenode.txt",'w') as f:
     f.write(txt)      
