@@ -15,11 +15,12 @@
 - [小汐搬运](https://banyunxiaoxi.icu/)
 
 ### 待开发❎
+- [freenode](https://freenode.me/)https://base64.us/
 - [Lncn.org](https://lncn.org/)
-- [v2cross](https://v2cross.com/archives/1884)
 - [不良林直播](https://www.youtube.com/watch?v=RCp9hnp7r6Q)
 
 ### 已经失效❌
+- [v2cross](https://v2cross.com/archives/1884)
 - [2022 年 448个免费翻墙节点分享](https://vpnbay.com/free-ss-vmess-trojan-nodes.html)
 - [JACKUSR2089仓库](https://api.github.com/repos/JACKUSR2089/v2ray-subscribed/contents)
 

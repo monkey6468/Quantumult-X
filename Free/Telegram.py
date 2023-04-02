@@ -12,7 +12,7 @@ import telepot
 import json
 
 # Replace YOUR_API_TOKEN with your Telegram Bot API token
-bot = telepot.Bot('YOUR_API_TOKEN')
+bot = telepot.Bot('6211546175:AAGN81a77TNyI01KDD79PTX4pKWaX3ZoFmM')
 
 # Replace YOUR_CHAT_ID with the ID of the Telegram group you want to get messages from
 chat_id = 'YOUR_CHAT_ID'
