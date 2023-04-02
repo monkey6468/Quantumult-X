@@ -26,8 +26,9 @@ jobs:
         pip install beautifulsoup4
     - name: 执行任务
       run: |
-        python ./Free/fetch.py
-        python ./Free/freenode.py
+        python ./Free/1.kzkj.py
+        python ./Free/2.xxby.py        
+        python ./Free/3.freenode.py
       
     - name: 提交更改
       run: |
