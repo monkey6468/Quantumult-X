@@ -21,7 +21,9 @@ jobs:
     - name: 安装依赖
       run: pip install requests
     - name: 执行任务
-      run: python ./Free/fetch.py
+      run: ｜
+        python ./Free/fetch.py
+        python ./Free/freenode.py
       
     - name: 提交更改
       run: |                 
