@@ -31,6 +31,5 @@ except:
 txt = ''
 for url in set(merge):
     txt = txt + url + '\n'
-with open("Free/freenode.txt",'w') as f:
-    b64txt = base64.b64encode(txt.encode())
-    f.write(str(b64txt,'utf-8'))    
+with open("Free/freenode_row.txt",'w') as f:
+    f.write(txt)      
