@@ -18,6 +18,7 @@ try:
 
     res = requests.get(article_url,headers=headers)
     sub_url = re.search(r'<p><strong>这是v2订阅地址</strong>：(.*?)</p>',res.text).groups()[0]
+    print(sub_url)
 
     res = requests.get(sub_url,headers=headers)
     merge += str(base64.b64decode(res.text.encode()),'utf-8').strip().replace('\r\n','\n').split('\n')
