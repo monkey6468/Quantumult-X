@@ -9,7 +9,7 @@ Quantumult X 是一款付费APP，7.99美元，需要用美区等AppleID账号�
 
 注册美国AppleID教程：<a href="https://github.com/kjfx/AppleID" target="_blank">https://github.com/kjfx/AppleID</a><br><br>
 
-## 二、Quantumult X 添加节点，订阅链接
+### Quantumult X 添加节点，订阅链接
 #### 1、通过机场订阅链接导入
 - Quantumult X 支持SS/SSR订阅链接、支持 Quantumult X 格式的 V2Ray和Trojan订阅链接。
 - 机场网站有 Quantumult X 订阅链接的，直接复制订阅链接到 圈X的引用（订阅）里粘贴，或者点击导入到 Quantumult X 。
