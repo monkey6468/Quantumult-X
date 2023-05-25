@@ -7,7 +7,7 @@
 
 [rewrite_local]
 
-^https?:\/\/api\.tapeacall\.com\/v3\/receipt? url script-response-body https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/vip/wywnds.js
+^https?:\/\/api\.tapeacall\.com\/v3\/receipt? url script-response-body https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/vip/TapeAcall.js
 
 [mitm]
 
