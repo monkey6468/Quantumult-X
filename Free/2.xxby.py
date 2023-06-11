@@ -28,26 +28,28 @@ def decode(to_decode: str):
 try:
     res = requests.get("https://banyunxiaoxi.icu/", headers=headers)
     res.encoding = 'UTF-8'
-    pattern = r'<a href="(https://banyunxiaoxi.icu/(.*?)/)" class="post-title"><h3>20(.*?)-(.*?)-(.*?)节点更新(.*?)个</h3></a>'
-    searchValue = re.search(pattern, res.text)
-    article_url = searchValue.groups()[0]
-    res = requests.get(article_url, headers=headers)
 
-    soup = BeautifulSoup(res.content, 'html.parser')
-    cites = soup.find_all('cite')  # soup.cite
+    sub_url = re.search(r'<h3 class="title"><a href="(https://banyunxiaoxi.icu/20(.*?)/(.*?)/(.*?)/20(.*?)-(.*?)-(.*?)/)"',res.text).groups()[0]
+    print(sub_url)
+
+    sub_res = requests.get(sub_url, headers=headers)
+
+    soup = BeautifulSoup(sub_res.content, 'html.parser')
+    cites = soup.find_all('blockquote')  # soup.cite
     content = cites[0]
-    listData = content.contents
+    listData = content.contents[0]
 
     data = ""
     for strText in listData:
-        if isinstance(strText, Tag):
-            if strText.name in "br":
-                merge.append(data)
-                data = ""
+        if isinstance(strText, Tag) == False:
+            item = str(strText).split("\n")
+            if (len(item)>1) :
+                print(item[1])
+                merge.append(item[1])
             else:
-                data = data + decode(str(strText.get('data-cfemail')))
-        else:
-            data = data + str(strText)
+                print(strText)
+                merge.append(strText) 
+
 except:
     traceback.print_exc()
 
