@@ -13,6 +13,9 @@
 
 ### 待开发❎
 - [翻墙论坛|翻墙党社区's Archiver](https://fanqiangdang.com/archiver/fid-51.html)
+主要问题是:
+  引荐来源网址政策:`strict-origin-when-cross-origin`
+  不知道python3如何解决，希望有大佬能帮忙
 - [Lncn.org](https://lncn.org/)
 - [不良林直播](https://www.youtube.com/watch?v=RCp9hnp7r6Q)
 
