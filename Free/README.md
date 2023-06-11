@@ -3,13 +3,11 @@
 自动抓取部分不提供订阅的公开节点。
 
 ## 食用方法
-- [freenode](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/List/freenode.txt)
 - [小汐搬运](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/List/xxby.txt)
 - [快嘴科技](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/List/kzkj.txt)
 
 ## 主要参考的地址
 ### 已经完成✅
-- [freenode](https://freenode.me/)
 - [小汐搬运](https://banyunxiaoxi.icu/)
 - [快嘴科技](https://kkzui.com/jd?orderby=modified)
 
@@ -19,6 +17,7 @@
 - [不良林直播](https://www.youtube.com/watch?v=RCp9hnp7r6Q)
 
 ### 已经失效❌
+- [freenode](https://freenode.me/) 需要密码暂时没办法解决
 - [v2cross](https://v2cross.com/archives/1884)
 - [2022 年 448个免费翻墙节点分享](https://vpnbay.com/free-ss-vmess-trojan-nodes.html)
 - [JACKUSR2089仓库](https://api.github.com/repos/JACKUSR2089/v2ray-subscribed/contents)
