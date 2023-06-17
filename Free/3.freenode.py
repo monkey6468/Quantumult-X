@@ -11,7 +11,7 @@ merge = []
 # ========== 抓取 https://freenode.me/ 的节点 ==========
 try:
     res = requests.get("https://freenode.me/",headers=headers)
-    article_url = re.search(r'<a href="(https://freenode.me/a/(.*?).html)" target="_self">(.*?)｜20(.*?)年(.*?)月(.*?)日最新高速稳定免费节点 Clash节点 V2ray节点 小火箭节点SSR订阅 Clash订阅 V2ray订阅  免费机场节点分享 节点订阅免费翻墙科学上网</a>',res.text).groups()[0]
+    article_url = re.search(r'<a href="(https://freenode.me/a/(.*?).html)"',res.text).groups()[0]
     print(article_url)
 
     sub_res = requests.get(article_url,headers=headers)

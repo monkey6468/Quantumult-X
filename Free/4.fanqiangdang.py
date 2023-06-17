@@ -4,6 +4,10 @@ import re
 import base64
 import traceback
 import os
+from flask_cors import CORS 
+from flask import Flask
+from flask_cors import CORS, cross_origin
+
 from bs4 import BeautifulSoup, Tag
 from lxml import etree
 
@@ -12,16 +16,19 @@ headers = {"User-Agent":"Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) 
            "accept-language":"zh-CN,zh-TW;q=0.9,zh;q=0.8,en;q=0.7",
            "content-encoding":"br",
            "Content-Type":"text/html;",
+           # "Set-Cookie":"JekG_761d_forum_lastvisit=D_2_1686468722; expires=Sun, 18-Jun-2023 07:32:02 GMT; Max-Age=604800; path=/; domain=.fanqiangdang.com; secure",
         #    "accept-encoding":"gzip, deflate, br",
-        #    "cookie":"JekG_761d_saltkey=wMmJZ80e; JekG_761d_lastvisit=1680413849; _ga=GA1.2.1228613324.1680417566; _gid=GA1.2.1557583047.1680417566; __cf_bm=67cC9nZK_Z3Tvv36chjtnZlyU.3uC4McqS15ChzFr98-1680427736-0-AbcY2whbVeMROLzZyhHcwKGJG9GpHY+9Bntmruo5GqKkOe4hK/95OdC8y4GD0Ns+7mQwfTewWk1s69VJQ+zaibuuwcvoLVHdaBrh8jjtn+IPGHk8pgVwL6uJonALgtibaw==; JekG_761d_st_t=0|1680428013|fc3c6993abbb9204a96df3e5634bcd0e; JekG_761d_forum_lastvisit=D_2_1680427735D_51_1680428013; JekG_761d_visitedfid=51D43D2D63; JekG_761d_sid=ENK7N7; JekG_761d_lastact=1680428200	index.php	viewthread; JekG_761d_st_p=0|1680428200|d20b292a59bab465d3dbd4efe9cf8cf3; JekG_761d_viewid=tid_88696",
-           "referer":"https://fanqiangdang.com/archiver/tid-210.html?_dsign=864ca95c"}
+           "Access-Control-Allow-Origin":"*",
+           "Access-Control-Allow-Headers":"Content-Type",
+           "Access-Control-Allow-Credentials":"GET,POST,OPTIONS",
+           }
 merge = []
 
 # ========== 抓取 https://fanqiangdang.com/archiver/?fid-2.html 的节点 ==========
 try:
     res = requests.get("https://fanqiangdang.com/archiver/?fid-2.html",headers=headers)
-    # res.encoding = 'utf-8'
-    # html = etree.HTML(res.text)
+    res.encoding = 'utf-8'
+    html = etree.HTML(res.text)
     print(res.text)
     # lis = html.xpath('//*[@id="content"]/ul/li')
     # print(lis)# //*[@id="content"]/ul/li[1]
