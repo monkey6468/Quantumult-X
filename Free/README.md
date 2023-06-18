@@ -3,8 +3,8 @@
 自动抓取部分不提供订阅的公开节点。
 
 ## 食用方法
-- [小汐搬运](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/List/xxby.txt)
-- [快嘴科技](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/List/kzkj.txt)
+- [小汐搬运](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/xxby.txt)
+- [快嘴科技](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/kzkj.txt)
 
 ## 主要参考的地址
 ### 已经完成✅
