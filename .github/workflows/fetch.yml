@@ -17,7 +17,6 @@ jobs:
       uses: actions/setup-python@v2
       with:
         python-version: '3.x'
-        python -V
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
 
@@ -28,6 +27,7 @@ jobs:
         pip3 install ssr-utils
     - name: 执行任务
       run: |
+        python -V
         python ./Free/1.kzkj.py
         python ./Free/2.xxby.py
         #python ./Free/3.freenode.py
