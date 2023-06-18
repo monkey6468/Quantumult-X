@@ -29,7 +29,7 @@ txt = ''
 for url in set(merge):
     txt = txt + url + '\n'
 
-if not os.path.exists("Free"):
-    os.makedirs("Free")
-with open("Free/kzkj.txt",'w') as f:
+if not os.path.exists("Free/List"):
+    os.makedirs("Free/List")
+with open("Free/List/kzkj.txt",'w') as f:
     f.write(txt)
