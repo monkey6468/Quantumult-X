@@ -11,8 +11,7 @@ merge = []
 # ========== 抓取 kkzui.com 的节点 ==========
 try:
     res = requests.get("https://kkzui.com/jd?orderby=modified",headers=headers)
-    article_url = re.search(r'<h2 class="item-heading"><a href="(https://kkzui.com/(.*?)\.html)">',res.text).groups()[0]
-
+    article_url = re.search(r'<a href="(https://kkzui.com/(.*?)\.html)"',res.text).groups()[0]
     print(article_url)
     res = requests.get(article_url,headers=headers)
     sub_url = re.search(r'<p><strong>这是v2订阅地址</strong>：(.*?)</p>',res.text).groups()[0]

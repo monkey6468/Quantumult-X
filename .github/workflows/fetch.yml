@@ -27,11 +27,9 @@ jobs:
         pip3 install ssr-utils
     - name: 执行任务
       run: |
-        python ./Free/1.kzkj.py
-        python ./Free/2.xxby.py
-        #python ./Free/3.freenode.py
-        #python ./Free/4.fanqiangdang.py
-        python ./Free/5.scope.py
+        python ./Free/1.xxby.py
+        python ./Free/2.scope.py
+        
       
     - name: 提交更改
       run: |
