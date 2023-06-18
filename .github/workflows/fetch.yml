@@ -16,7 +16,8 @@ jobs:
     - name: 安装Python
       uses: actions/setup-python@v2
       with:
-        python-version: '3.9.6'
+        python-version: '3.x'
+        python -V
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
 
