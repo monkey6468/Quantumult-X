@@ -19,7 +19,7 @@ headers = {
 }
 
 merge = []
-# ========== 抓取 api-2.quickg.cc 的节点 来源于电报群 快捷指令 ShortCut==========
+# ========== 抓取 api-2.quickg.cc 的节点 ==========
 try:
     url = "https://api-2.quickg.cc/api/v5/nodes/"
     res = requests.post(url=url, headers=headers)
