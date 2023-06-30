@@ -6,7 +6,7 @@
 *******************************
 
 [task_local]
-30 8 * * * https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/task/60s.js, tag=每天60s读懂世界
+30 8 * * * https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/task/60s.js, tag=每天60s读懂世界, img-url=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/60s.png, enabled=true
 */
 
 const url = `https://api.03c3.cn/zb/api.php`;
