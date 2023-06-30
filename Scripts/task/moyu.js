@@ -7,7 +7,7 @@
 *******************************
 
 [task_local]
-6 9 * * * https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/task/moyu.js, tag=摸鱼摸鱼, img-url=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png, enabled=true
+6 9 * * * https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/task/moyu.js, tag=摸鱼, img-url=https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/67/04/ff/6704ff4c-b49b-de91-70ac-201c62d5296f/AppIcon-0-0-1x_U007emarketing-0-0-0-5-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/144x144bb.png, enabled=true
 */
 const scriptName = '摸鱼来啦~';
 const $ = new Env(scriptName);
