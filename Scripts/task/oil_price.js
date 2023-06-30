@@ -1,3 +1,5 @@
+/*
+******************************
 //转自https://raw.githubusercontent.com/RS0485/network-rules/main/scripts/gas-price.js
 //感谢@chavyleung，@Keywos
 //qx修改地区不方便，自行建个仓库修改地区，或者把文件保存到本地修改执行
@@ -6,11 +8,15 @@
 //已支持通过BoxJs修改地区。在BoxJs的数据查看器输入“地区”，数据编辑器输入地区拼音
 //BoxJs重写链接：https://raw.githubusercontent.com/chavyleung/scripts/master/box/rewrite/boxjs.rewrite.quanx.conf
 //BoxJs网址：https://boxjs.com 或者新版：https://dompling.github.io/boxjs.react
-/*
-[task_local]
-0 8 * * * https://raw.githubusercontent.com/Toperlock/Quantumult/main/task/oil_price.js, tag=今日油价, img-url=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/oil.png, enabled=true
-*/
 
+脚本功能：今日油价
+更新时间：2023-6-30
+使用声明：⚠️此脚本仅供学习与交流，请勿转载与贩卖！⚠️⚠️⚠️
+*******************************
+
+[task_local]
+13 8 * * * https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Scripts/task/oil_price.js, tag=今日油价, img-url=https://raw.githubusercontent.com/Toperlock/Quantumult/main/icon/oil.png, enabled=true
+*/
 const $ = new Env("查询油价");
 // 默认福建
 var region = $.getdata("地区") || "hunan";
