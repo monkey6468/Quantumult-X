@@ -3,15 +3,17 @@
 自动抓取部分不提供订阅的公开节点。
 
 ## 食用方法
-- [小汐搬运](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/xxby.txt)
-- [快嘴科技](https://raw.githubusercontent.com/1019459067/Quantumult-X/master/Free/kzkj.txt)
+- [小汐搬运](https://raw.githubusercontent.com/monkey6468/Quantumult-X/master/FreeList/xxby.txt)
+- [Lncn.org](https://raw.githubusercontent.com/monkey6468/Quantumult-X/master/FreeList/incn.txt)
 
 ## 主要参考的地址
 ### 已经完成✅
 - [小汐搬运](https://banyunxiaoxi.icu/)
-- [快嘴科技](https://kkzui.com/jd?orderby=modified)
+- [Lncn.org](https://lncn.org/)
 
 ### 待开发❎
+- [快嘴科技](https://kkzui.com/jd?orderby=modified)
+
 - [翻墙论坛|翻墙党社区's Archiver](https://fanqiangdang.com/archiver/fid-51.html)
 主要问题是:
   引荐来源网址政策:`strict-origin-when-cross-origin`
