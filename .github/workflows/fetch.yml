@@ -29,6 +29,7 @@ jobs:
       run: |
         python ./Free/1.xxby.py
         python ./Free/2.scope.py
+        python ./Free/4.incn.py
         
       
     - name: 提交更改
