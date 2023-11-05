@@ -5,6 +5,7 @@ import os
 
 merge = []
 
+# ========== 抓取 lncn.org 的节点 ==========
 try:  
     url = 'https://lncn.org/'  
     response = requests.get(url)  
