@@ -44,10 +44,10 @@ try:
         if isinstance(strText, Tag) == False:
             item = str(strText).split("\n")
             if (len(item)>1) :
-                print(item[1])
+                # print(item[1])
                 merge.append(item[1])
             else:
-                print(strText)
+                # print(strText)
                 merge.append(strText) 
 
 except:
@@ -58,9 +58,10 @@ except:
 txt = ''
 for url in set(merge):
     txt = txt + url + '\n'
+    print(txt)
 
-if not os.path.exists("Free/List"):
-    os.makedirs("Free/List")
-with open("Free/List/xxby.txt",'w') as f:
+if not os.path.exists("FreeList"):
+    os.makedirs("FreeList")
+with open("FreeList/xxby.txt",'w') as f:
     f.write(txt)
 
