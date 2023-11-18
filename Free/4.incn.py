@@ -1,3 +1,4 @@
+import base64
 import requests  
 import re  
 import traceback
@@ -34,3 +35,14 @@ if not os.path.exists("FreeList"):
     os.makedirs("FreeList")
 with open("FreeList/incn.txt",'w') as f:
     f.write(txt)
+
+
+# ========== 将字符串转换为Base64编码 ==========
+# 将字符串转换为字节对象  
+utf8Str = txt.encode('utf-8')  
+
+# 将字节对象转换为Base64编码  
+base64Str = base64.b64encode(utf8Str) 
+print(base64Str)  
+with open("FreeList/incn_base64",'w') as f:
+    f.write(base64Str.decode('utf-8'))    
