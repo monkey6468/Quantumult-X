@@ -223,3 +223,7 @@ Quantumult X 去广告和京东签到视频教程：▶ https://youtu.be/bW7DxHs
 7、最后就可以把 获取cookie 脚本和hostname 注释掉了
 ### 参考感谢🙏
 [@chavyleung](https://github.com/chavyleung/scripts/tree/master/bilibili)
+
+# 访问量
+![](http://profile-counter.glitch.me/elnfnoosm-iOS_network/count.svg)
+
