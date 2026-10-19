@@ -1,10 +1,9 @@
 name: Fetch
 
 on:
+  # 2026-10-19核查：近期自动抓取仅生成空提交，没有更新节点文件。
+  # 停止周期空跑，保留本人按需手动抓取；后续不得仅为保活恢复定时触发。
   workflow_dispatch:
-  schedule:
-    # 表达式生成  https://docs.github.com/en/actions/using-workflows/events-that-trigger-workflows#schedule
-    - cron: '0 0,*/1,* * * *'
 
 jobs:
   fetch:
